@@ -15,3 +15,5 @@ https://developer.chrome.com/docs/lighthouse/overview/
 https://frontendchecklist.io/#section-head
 
 https://www.creative-tim.com/twcomponents
+
+https://www.figma.com/community/plugin/973190386632562805/export-original-images
