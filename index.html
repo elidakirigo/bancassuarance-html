@@ -8,14 +8,14 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style.css" />
 		<!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" > -->
 		<script src="https://cdn.tailwindcss.com" defer></script>
 	</head>
 
 	<body>
 		<header>
-			<div class="">
+			<section class="">
 				<ul>
 					<li></li>
 					<li></li>
@@ -24,9 +24,9 @@
 					<li></li>
 					<li></li>
 				</ul>
-			</div>
-			<nav>
-				<!-- component -->
+			</section>
+			<div>
+				<!-- navbar component -->
 				<nav class="relative flex items-center justify-between px-4 py-4 bg-white">
 					<a class="text-3xl font-bold leading-none" href="#">
 						<svg class="h-10" alt="logo" viewBox="0 0 10240 10240">
@@ -73,6 +73,21 @@
 					<a class="hidden px-6 py-2 text-sm font-bold text-gray-900 transition duration-200 lg:inline-block lg:ml-auto lg:mr-3 bg-gray-50 hover:bg-gray-100 rounded-xl" href="#">Sign In</a>
 					<a class="hidden px-6 py-2 text-sm font-bold text-white transition duration-200 bg-blue-500 lg:inline-block hover:bg-blue-600 rounded-xl" href="#">Sign up</a>
 				</nav>
+				<!-- component -->
+				<div class="flex items-center justify-center min-h-screen from-cyan-100 via-pink-200 to-yellow-200 bg-gradient-to-br">
+					<div class="flex items-center max-w-md mx-auto bg-white rounded-lg" x-data="{ search: '' }">
+						<div class="w-full">
+							<input type="search" class="w-full px-4 py-1 text-gray-800 rounded-full focus:outline-none" placeholder="search" x-model="search" />
+						</div>
+						<div>
+							<button type="submit" class="flex items-center justify-center w-12 h-12 text-white bg-blue-500 rounded-r-lg" :class="(search.length > 0) ? 'bg-purple-500' : 'bg-gray-500 cursor-not-allowed'" :disabled="search.length == 0">
+								<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
 				<div class="relative z-50 hidden navbar-menu">
 					<div class="fixed inset-0 bg-gray-800 opacity-25 navbar-backdrop"></div>
 					<nav class="fixed top-0 bottom-0 left-0 flex flex-col w-5/6 max-w-sm px-6 py-6 overflow-y-auto bg-white border-r">
@@ -120,7 +135,7 @@
 						</div>
 					</nav>
 				</div>
-			</nav>
+			</div>
 		</header>
 
 		<main>
