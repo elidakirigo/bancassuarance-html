@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
 		<!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" > -->
 		<script src="https://cdn.tailwindcss.com" defer></script>
@@ -16,7 +16,7 @@
 	<body>
 		<header>
 			<section class="flex justify-center bg-[#3C251F] w-full">
-				<div class="flex justify-end p-3 w-full max-w-[1200px] capitalize">
+				<div class="flex justify-end py-3 w-full max-w-[1300px] capitalize">
 					<ul class="flex justify-between items-center gap-6 font-light text-[#FFAF2E] text-[11px]">
 						<li>investor relations</li>
 						<li>national online banking</li>
@@ -30,7 +30,7 @@
 			</section>
 			<div class="flex justify-center">
 				<!-- navbar component -->
-				<nav class="relative flex justify-between items-center bg-white px-4 w-full max-w-[1200px]">
+				<nav class="relative flex justify-between items-center bg-white w-full max-w-[1300px]">
 					<div class="py-4">
 						<img src="./assets/logo.svg" alt="bancassuarance logo" />
 					</div>
@@ -43,12 +43,12 @@
 						</button>
 					</div>
 					<ul class="lg:flex gap-4 hidden capitalize">
-						<li><a class="hover:border-[#FFBA00] px-4 py-4 hover:border-b-4 font-normal hover:font-bold text-[#3C251F] text-md hover:text-[#FFBA00]" href="#">Home</a></li>
+						<li><a class="hover:border-[#FFBA00] px-4 py-6 hover:border-b-4 font-normal hover:font-bold text-[#3C251F] text-md hover:text-[#FFBA00]" href="#">Home</a></li>
 
-						<li><a class="hover:border-[#FFBA00] px-4 py-4 hover:border-b-4 font-normal hover:font-bold text-[#3C251F] text-md hover:text-[#FFBA00]" href="#">About bancassuarance</a></li>
+						<li><a class="hover:border-[#FFBA00] px-4 py-6 hover:border-b-4 font-normal hover:font-bold text-[#3C251F] text-md hover:text-[#FFBA00]" href="#">About bancassuarance</a></li>
 
-						<li><a class="hover:border-[#FFBA00] px-4 py-4 hover:border-b-4 font-normal hover:font-bold text-[#3C251F] text-md hover:text-[#FFBA00]" href="#">Personal solutions</a></li>
-						<li><a class="hover:border-[#FFBA00] px-4 py-4 hover:border-b-4 font-normal hover:font-bold text-[#3C251F] text-md hover:text-[#FFBA00]" href="#">corporate solutions</a></li>
+						<li><a class="hover:border-[#FFBA00] px-4 py-6 hover:border-b-4 font-normal hover:font-bold text-[#3C251F] text-md hover:text-[#FFBA00]" href="#">Personal solutions</a></li>
+						<li><a class="hover:border-[#FFBA00] px-4 py-6 hover:border-b-4 font-normal hover:font-bold text-[#3C251F] text-md hover:text-[#FFBA00]" href="#">corporate solutions</a></li>
 						<li>
 							<img src="./assets/search.svg" alt="bancassuarance search icon" class="h-[20px]bg-[] w-[20px]" />
 						</li>
@@ -121,15 +121,30 @@
 
 		<main>
 			<section class="relative">
-				<div class="relative bg-purple-300 mx-auto w-full max-w-[1200px]">
-					<div class="top-20 left-0 absolute bg-[#30120B]/80 mx-4 py-10">
-						<h1 class='text-[#FFBA00] b-[#FFBA00] b-r-2'>NBK Bancassurance Intermediary Limited</h1>
-						<p>A financial safety net designed for you and everything that matters to you.</p>
+				<div class="relative mx-auto w-full max-w-[1300px]">
+					<div class="top-28 left-0 absolute bg-[#30120B]/80 py-10 pr-10 max-w-[600px]">
+						<h1 class="border-[#FFBA00] pl-14 border-l-[12px] font-black text-[#FFBA00] text-4xl leading-10 tracking-wide">NBK Bancassurance Intermediary Limited</h1>
+						<p class="border-[#FFBA00]/0 pt-4 pl-14 border-l-[12px] text-2xl text-white">A financial safety net designed for you and everything that matters to you.</p>
 					</div>
 				</div>
 				<img src="./assets/happy-banker.png" class="w-full h-full" />
 			</section>
-			<section></section>
+			<section class="py-20">
+				<h1 class="font-black text-[#1A1818] text-5xl text-center">Personal Solutions</h1>
+				<p class="mx-auto mt-10 max-w-[1100px] text-3xl text-center">Looking for motor, health, property or general cover? Enjoy quality product offerings with high standards of service from NBK Bancassurance Intermediary Limited.</p>
+				<div class='flex justify-center'>
+					<div class="flex gap-6 my-12 max-w-[1300px]">
+					<div class="flex flex-col justify-center bg-[url('./assets/money-stack.webp')] bg-cover p-14 rounded-lg">
+						<span class="block font-black text-3xl text-center">General Insurance</span>
+						<button class="border-2 border-white mx-auto mt-4 px-6 py-2 rounded-xl text-white">Learn more</button>
+					</div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				</div>
+				
+			</section>
 			<section></section>
 			<section></section>
 		</main>

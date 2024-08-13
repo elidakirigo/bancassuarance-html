@@ -19,3 +19,5 @@ https://www.creative-tim.com/twcomponents
 https://www.figma.com/community/plugin/973190386632562805/export-original-images
 
 https://freefrontend.com/tailwind-navbars/
+
+https://docs.deque.com/linter/4.0.0/en/axe-linter-github-action
