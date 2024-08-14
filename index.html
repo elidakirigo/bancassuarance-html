@@ -86,6 +86,7 @@
 		</header>
 
 		<main>
+			<!-- Introduction section -->
 			<section class="relative">
 				<div class="relative mx-auto w-full max-w-[1300px] lg:h-auto">
 					<div class="top-0 lg:top-28 left-0 absolute bg-[#30120B]/80 px-4 lg:px-0 py-14 pr-10 w-full lg:max-w-[600px] lg:h-auto min-h-[220px]">
@@ -95,6 +96,7 @@
 				</div>
 				<img src="./assets/happy-banker.png" class="w-full h-[220px] lg:h-full object-cover" alt="banker image" />
 			</section>
+			<!-- Personal solutions section -->
 			<section class="px-4 py-20">
 				<h1 class="w-full h-full font-black text-[#1A181] text-3xl text-center lg:text-5xl">Personal Solutions</h1>
 				<p class="text-center mx-auto mt-8 max-w-[1150px] lg:text-3xl text-xl leading-12">Looking for motor, health, property or general cover? Enjoy quality product offerings with high standards of service from NBK Bancassurance Intermediary Limited.</p>
@@ -135,6 +137,7 @@
 					</div>
 				</div>
 			</section>
+			<!-- Corporate solution section -->
 			<section class="bg-[#F5F0F0] px-4 pt-20">
 				<h1 class="w-full h-full font-black text-[#3C251F] text-3xl text-center lg:text-5xl">Corporate Solutions</h1>
 				<p class="text-center mx-auto mt-8 max-w-[1150px] lg:text-3xl text-xl leading-12 text-[#3C251F]">NBK Bancassurance Intermediary Limited has partnered with major insurers to offer your organization the best risk management advisory and insurance services in Kenya.</p>
@@ -175,6 +178,7 @@
 					</div>
 				</div>
 			</section>
+			<!-- Forex section -->
 			<section class="bg-[#F9EBE8]">
 				<div class="flex flex-wrap justify-center px-4">
 					<div class="flex lg:flex-row flex-col flex-wrap justify-between items-center gap-4 py-4 w-full max-w-[1300px]">
@@ -187,6 +191,7 @@
 					</div>
 				</div>
 			</section>
+			<!-- Search bar section -->
 			<section>
 				<!-- component -->
 				<div class="relative flex justify-center items-center min-h-[350px]">
@@ -243,6 +248,10 @@
 			</section>
 		</main>
 
+		<!-- Implement the Back Top Top Button -->
+		<button id="to-top-button" onclick="goToTop()" title="Go To Top" class="hidden fixed z-90 bottom-16 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-white text-3xl font-bold">&uarr;</button>
+
+		<!-- page footer -->
 		<footer class="flex justify-center bg-[#3C251F] w-full">
 			<div class="flex flex-col lg:flex-row lg:justify-between px-4 py-3 w-full items-center max-w-[1300px] text-white text-xs capitalize">
 				<div>
@@ -306,6 +315,23 @@
 					}
 				}
 			})
+		</script>
+			<script>
+			var toTopButton = document.getElementById('to-top-button')
+
+			// When the user scrolls down 200px from the top of the document, show the button
+			window.onscroll = function () {
+				if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+					toTopButton.classList.remove('hidden')
+				} else {
+					toTopButton.classList.add('hidden')
+				}
+			}
+
+			// When the user clicks on the button, smoothy scroll to the top of the document
+			function goToTop() {
+				window.scrollTo({ top: 0, behavior: 'smooth' })
+			}
 		</script>
 	</body>
 </html>
