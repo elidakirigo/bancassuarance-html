@@ -21,3 +21,5 @@ https://www.figma.com/community/plugin/973190386632562805/export-original-images
 https://freefrontend.com/tailwind-navbars/
 
 https://docs.deque.com/linter/4.0.0/en/axe-linter-github-action
+
+https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&checkerrorpages=yes&useragent=Validator.nu%2FLV+https%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Felidakirigo.github.io%2FBank-assuarance---html-task%2F#file
